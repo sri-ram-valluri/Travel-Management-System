@@ -1,13 +1,11 @@
 package travel.management;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.sql.*;
-import java.util.ArrayList;
+import java.util.*;
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-
+import javax.swing.table.*;
 /**
  *
  * @author sriramvalluri
@@ -143,6 +141,7 @@ public class PassengerList extends JFrame implements ActionListener{
                 tableModel.addRow(row.toArray(new Object[row.size()]));
             }
             passenger_enrolled_value_lbl.setText(Integer.toString(passenger_enrolled));
+            rs.close();
             
         } catch (Exception e2) {
                 e2.printStackTrace();

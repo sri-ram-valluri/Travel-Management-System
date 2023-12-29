@@ -106,6 +106,11 @@ public class Dashboard extends JFrame implements ActionListener{
             }
         }
         if(ae.getSource() == passenger_details_btn){
+            try{
+               new PassengerDetails(username).setVisible(true);
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
         }
         if(ae.getSource() == available_activites_btn){
         }
