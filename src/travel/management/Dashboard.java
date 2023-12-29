@@ -99,6 +99,11 @@ public class Dashboard extends JFrame implements ActionListener{
             }
         }
         if(ae.getSource() == passenger_list_btn){
+            try{
+               new PassengerList(username).setVisible(true);    
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
         }
         if(ae.getSource() == passenger_details_btn){
         }
