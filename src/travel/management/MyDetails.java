@@ -81,17 +81,4 @@ public class MyDetails extends JFrame{
         panel.add(lbl);
     }
     
-    public static void main(String[] args){
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                    try {
-                        MyDetails frame = new MyDetails("agency1");
-                        frame.setVisible(true);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-            }
-        });
-    }
-    
 }

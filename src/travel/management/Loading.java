@@ -64,7 +64,4 @@ public class Loading extends JFrame implements Runnable{
         }
     }
     
-    public static void main(String[] args){
-        new Loading("", "").setVisible(true);
-    }
 }

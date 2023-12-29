@@ -96,8 +96,4 @@ public class ViewTravelPackages extends JFrame{
         
         return package_info_panel;
     }
-    
-    public static void main(String[] args){
-        new ViewTravelPackages("agency1").setVisible(true);
-    }
 }

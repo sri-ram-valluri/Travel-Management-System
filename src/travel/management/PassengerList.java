@@ -148,8 +148,4 @@ public class PassengerList extends JFrame implements ActionListener{
         }
     }
     
-    public static void main(String[] args){
-        new PassengerList("agency1").setVisible(true);
-    }
-    
 }

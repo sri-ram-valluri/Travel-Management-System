@@ -70,7 +70,6 @@ public class PassengerDetails extends JFrame implements ActionListener{
         contentPane.add(balance_value_lbl);
         
         JLabel activities_lbl = new JLabel("Activities Enrolled");
-//        activities_lbl.setFont(new Font("SAN_SERIF", Font.PLAIN, 15));
         activities_lbl.setBounds(60, 170, 200, 25);
         contentPane.add(activities_lbl);
         
@@ -142,10 +141,6 @@ public class PassengerDetails extends JFrame implements ActionListener{
         } catch(SQLException e){
             e.printStackTrace();
         }
-    }
-    
-    public static void main(String[] args){
-        new PassengerDetails("agency1").setVisible(true);
     }
     
 }

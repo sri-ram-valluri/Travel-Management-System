@@ -113,13 +113,13 @@ public class Dashboard extends JFrame implements ActionListener{
             }
         }
         if(ae.getSource() == available_activites_btn){
+            try{
+               new ActivitesAvailable(username).setVisible(true);
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
         }
         if(ae.getSource() == about_btn){
         }        
-    }
-    
-    public static void main(String[] args){
-        new Dashboard("agency1","Sriram tours & travels" ).setVisible(true);
-    }
-    
+    }        
 }

@@ -118,12 +118,6 @@ public class Itinerary extends JFrame{
         });
         
         
-        contentPane.add(check_itinerary_btn);
-        
-        
-    }
-    
-    public static void main(String[] args){
-        new Itinerary("agency1").setVisible(true);
+        contentPane.add(check_itinerary_btn);  
     }
 }
